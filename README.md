@@ -1,7 +1,7 @@
 # docCLI
 A command line interface for Google Docs/Drive/Sheets.
 
-[![Documentation Status](https://readthedocs.org/projects/doccli/badge/?version=latest)](http://doccli.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/doccli/badge/?version=latest)](http://doccli.readthedocs.io/en/latest/?badge=latest) [![Build Status](https://travis-ci.org/asoderman/docCLI.svg?branch=travis)](https://travis-ci.org/asoderman/docCLI)
 
 
 ## What can it do?
