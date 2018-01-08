@@ -13,7 +13,11 @@ A command line interface for Google Docs/Drive/Sheets.
 
 ## How do I get it?
 
-Download this repo and run the setup.py with python3.6
+Download this repo and run the setup.py
+
+Pip support coming soon.
+
+Python 3.x (including 3.7a) supported
 
 ## Usage:
 
