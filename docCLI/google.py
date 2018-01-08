@@ -12,13 +12,14 @@ class NoClientSecretException(Exception):
 
 SCOPES = 'https://www.googleapis.com/auth/drive'
 
-try:
-    CLIENT_SECRET_FILE = 'docCLI/credentials/client_secret.json'
-    if not os.path.isfile(CLIENT_SECRET_FILE):
-        raise NoClientSecretException()
-except NoClientSecretException:
-    print('Unable to find client secret. Exiting...')
-    sys.exit(1)
+def get_client_secret():
+    try:
+        CLIENT_SECRET_FILE = 'docCLI/credentials/client_secret.json'
+        if not os.path.isfile(CLIENT_SECRET_FILE):
+            raise NoClientSecretException()
+    except NoClientSecretException:
+        print('Unable to find client secret. Exiting...')
+        sys.exit(1)
 
 
 APPLICATION_NAME = 'docCLI'
@@ -32,6 +33,7 @@ def get_credentials():
     Returns:
         Credentials, the obtained credential.
     '''
+    CLIENT_SECRET_FILE = get_client_secret()
     home_dir = os.path.expanduser('~')
     credential_dir = os.path.join(home_dir, '.credentials')
     if not os.path.exists(credential_dir):
