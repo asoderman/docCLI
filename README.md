@@ -1,6 +1,9 @@
 # docCLI
 A command line interface for Google Docs/Drive/Sheets.
 
+[![Documentation Status](https://readthedocs.org/projects/doccli/badge/?version=latest)](http://doccli.readthedocs.io/en/latest/?badge=latest)
+
+
 ## What can it do?
 - Open Google Docs/Drive/Sheets in your browser.
 - Open a Google Docs/Drive/Sheets file in your browser.
@@ -14,7 +17,7 @@ Download this repo and run the setup.py with python3.6
 
 ## Usage:
 
-All scripts contain a help option. Use ```[SCRIPT] --help``` to access it. The 
+All scripts contain a help option. Use ```[SCRIPT] --help``` to access it. The
 base commands are ```docs``` ```drive``` and ```sheets```.
 
 ### Docs:
@@ -45,7 +48,7 @@ specifies the extension defaults to .csv
 downloaded
 
 ## Developer Documentation:
-hosted - To be added
+[readthedocs](http://doccli.readthedocs.io/)
 
-If you want to generate the documentation yourself install sphinx and run 
+If you want to generate the documentation yourself install sphinx and run
 ```make html``` in the docs directory.
