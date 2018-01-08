@@ -13,9 +13,13 @@ A command line interface for Google Docs/Drive/Sheets.
 
 ## How do I get it?
 
-Download this repo and run the setup.py
+```pip install docCLI``` if python3 is your only installation.
 
-Pip support coming soon.
+```python3 -m pip install docCLI``` if you have multiple installations
+
+Alternatively:
+
+Download this repo and run the setup.py
 
 Python 3.x (including 3.7a) supported
 

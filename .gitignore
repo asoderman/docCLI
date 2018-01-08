@@ -2,6 +2,7 @@
 venv
 
 # Python files.
+build
 __pycache__
 dist
 *.pyc
