@@ -14,7 +14,9 @@ SCOPES = 'https://www.googleapis.com/auth/drive'
 
 def get_client_secret():
     try:
-        CLIENT_SECRET_FILE = 'docCLI/credentials/client_secret.json'
+        mod = '/'.join(os.path.abspath(__file__).split('/')[0:-1])
+        CLIENT_SECRET_FILE = os.path.join(mod,
+                                          'credentials/client_secret.json')
         if not os.path.isfile(CLIENT_SECRET_FILE):
             raise NoClientSecretException()
     except NoClientSecretException:
