@@ -6,7 +6,7 @@ setup(
 	author_email='asoderman.as@gmail.com',
 	url='https://github.com/asoderman/docCLI',
 	description='A command line interface for Google Docs suite',
-	version='0.0.2',
+	version='0.0.3',
 	install_requires=[
 		'Click',
 		'google-api-python-client'
